@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{0BE8E511-D506-A1D0-E67D-923A5ED26D39}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/interactableObject.cs">
+    <Files>
+      <File FileName="Assets/Scripts/interactableObject.cs" Line="27" Column="61" />
+      <File FileName="Assets/Scripts/NPCObject.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/PickableObject.cs" Line="9" Column="37" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="25" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="61e11c53-e051-40bf-924f-c0322f207e76" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
