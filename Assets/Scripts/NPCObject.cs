@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class NPCObject : interactableObject
 {
+
+    public string NPCName;
+    public string[] dialog;
+
+    public DialogUI dialogUI;
+
     protected override void interact()
     {
-        Debug.Log("NPCObject");
+        
+        dialogUI.Show(NPCName, dialog);
     }
 }

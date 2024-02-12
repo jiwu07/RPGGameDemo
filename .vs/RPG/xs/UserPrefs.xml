@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{0BE8E511-D506-A1D0-E67D-923A5ED26D39}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/interactableObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/DialogUI.cs">
     <Files>
       <File FileName="Assets/Scripts/interactableObject.cs" Line="27" Column="61" />
-      <File FileName="Assets/Scripts/NPCObject.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/NPCObject.cs" Line="15" Column="9" />
       <File FileName="Assets/Scripts/PickableObject.cs" Line="9" Column="37" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="25" Column="18" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="26" Column="18" />
+      <File FileName="Assets/Scripts/UI/DialogUI.cs" Line="27" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
