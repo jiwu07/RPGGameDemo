@@ -7,12 +7,24 @@ using UnityEngine.UI;
 public class DialogUI : MonoBehaviour
 {
 
+    public static DialogUI instanceUI{ get; private set;}
+
     public TextMeshProUGUI contentText;
     public TextMeshProUGUI nameText;
     public Button nextButton;
 
-    public List<string> contentList; // dialog content
+    private List<string> contentList; // dialog content
     private int contentIndex = 0;
+
+    private void Awake()
+    {
+        if(instanceUI != null && instanceUI != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        instanceUI = this;
+    }
 
     public void Start()
     {
@@ -20,6 +32,7 @@ public class DialogUI : MonoBehaviour
         Hide();
     }
 
+   
 
     public void Show()
     {
@@ -38,6 +51,7 @@ public class DialogUI : MonoBehaviour
 
     public void Hide()
     {
+        contentIndex = 0;
         gameObject.SetActive(false);
     }
 

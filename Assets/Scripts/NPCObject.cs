@@ -8,11 +8,10 @@ public class NPCObject : interactableObject
     public string NPCName;
     public string[] dialog;
 
-    public DialogUI dialogUI;
+    
 
     protected override void interact()
     {
-        
-        dialogUI.Show(NPCName, dialog);
+        DialogUI.instanceUI.Show( NPCName, dialog);
     }
 }
