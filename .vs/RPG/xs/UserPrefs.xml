@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{0BE8E511-D506-A1D0-E67D-923A5ED26D39}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Weapon/scytheWeapon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Weapon/JavelinBullet.cs">
     <Files>
-      <File FileName="Assets/Scripts/Weapon/scytheWeapon.cs" Line="21" Column="48" />
+      <File FileName="Assets/Scripts/Weapon/JavelinWeapon.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Weapon/Weapon.cs" />
+      <File FileName="Assets/Scripts/Weapon/scytheWeapon.cs" />
+      <File FileName="Assets/Scripts/Weapon/JavelinBullet.cs" Line="18" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="37aaec39-f2ea-41e0-97e5-cec1dc6fa4b7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d545f77-a5c8-4858-a0dc-67b99ac61967" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
