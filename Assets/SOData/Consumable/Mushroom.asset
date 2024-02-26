@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962f482fa134a4ee2b40876ac1b96d72, type: 3}
+  m_Name: Mushroom
+  m_EditorClassIdentifier: 
+  id: 100
+  name: MMushroom
+  type: 1
+  description: mental upup
+  propertyList:
+  - propertyType: 2
+    Value: 15
+  icon: {fileID: 21300000, guid: b8f88c5b0360e4b21ba62dd24b65ecad, type: 3}
+  preFab: {fileID: 5315568976968959275, guid: d084260af31414436bc39555f227f2bf, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962f482fa134a4ee2b40876ac1b96d72, type: 3}
+  m_Name: Javelin
+  m_EditorClassIdentifier: 
+  id: 0
+  name: SSJavelin
+  type: 0
+  description: ' I don''t know what to say, you should take it.'
+  propertyList:
+  - propertyType: 4
+    Value: 25
+  icon: {fileID: 21300000, guid: f2275f981710b4ff18a8f9d77333903b, type: 3}
+  preFab: {fileID: 4486791574582718421, guid: 45f2abef1539547dc85e7e64181c8e3e, type: 3}

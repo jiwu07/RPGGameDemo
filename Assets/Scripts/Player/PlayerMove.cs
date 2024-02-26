@@ -22,11 +22,11 @@ public class PlayerMove : MonoBehaviour
             RaycastHit hit;
             if(Physics.Raycast(ray,out hit))
             {
-                if(hit.collider.tag == "Interactable")
+                if(hit.collider.tag == Tag.INTERACTABLE)
                 {
                     hit.collider.GetComponent<interactableObject>().OnClick(playerAgent);
                 }
-                else if (hit.collider.tag == "Ground")
+                else if (hit.collider.tag == Tag.GROUND)
                 {
                     playerAgent.stoppingDistance = 0;
                     playerAgent.SetDestination(hit.point);
