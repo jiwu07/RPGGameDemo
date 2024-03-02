@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39b535c0d0764a38832ec7046db7865, type: 3}
   m_Name: ItemSOList
   m_EditorClassIdentifier: 
-  ItemSOList:
-  - {fileID: 11400000, guid: 93f0998ac312b444d8ebcda6af6fa55d, type: 2}
-  - {fileID: 11400000, guid: bed61fb0ba37840be93382532eb5997e, type: 2}
+  weaponSOList:
   - {fileID: 11400000, guid: 0997efcc36f754bd1b78384a65db6c4c, type: 2}
   - {fileID: 11400000, guid: 35d6516f2d2ac42d79fca2944932fa72, type: 2}
+  weaponSOFallingList:
+  - {fileID: 11400000, guid: ffcfc60d8d1ad4a0590f665bb690072b, type: 2}
+  - {fileID: 11400000, guid: e143a7194e95740789c8ac104be705ef, type: 2}
+  consumableSOList:
+  - {fileID: 11400000, guid: 93f0998ac312b444d8ebcda6af6fa55d, type: 2}
+  - {fileID: 11400000, guid: bed61fb0ba37840be93382532eb5997e, type: 2}
+  taskObjectSOList: []

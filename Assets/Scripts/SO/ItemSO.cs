@@ -12,7 +12,7 @@ public class ItemSO : ScriptableObject
     public string description;
     public List<ItemProperty> propertyList;
     public Sprite icon;
-    public GameObject preFab;
+    public GameObject prefab;
 }
 
 public enum ItemType

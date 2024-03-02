@@ -1,33 +1,15 @@
 ﻿<Properties StartupConfiguration="{0BE8E511-D506-A1D0-E67D-923A5ED26D39}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PickObject.cs">
     <Files>
-      <File FileName="Assets/Scripts/interactable/interactableObject.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Tag.cs" Line="8" Column="43" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="7" Column="16" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="99" Column="14" />
+      <File FileName="Assets/Scripts/interactable/PickableObject.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/Manager/InventoryManager.cs" Line="21" Column="37" />
+      <File FileName="Assets/Scripts/Player/PickObject.cs" Line="16" Column="25" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RPG" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="interactable" expanded="True" />
-                <Node name="Enemy.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="353b8707-5f71-4528-a876-9d7bad1887fd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="328eb69b-c5d8-4f9e-bb4c-f4e808a2ebf2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

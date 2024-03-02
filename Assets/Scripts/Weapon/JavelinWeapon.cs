@@ -8,6 +8,7 @@ public class JavelinWeapon : Weapon
     public float bulletSpeed = 20.0f;
     private GameObject bullet;
 
+
     private void Start()
     {
         SpawnBullet();
@@ -38,4 +39,6 @@ public class JavelinWeapon : Weapon
         bullet.GetComponent<Collider>().enabled = false;
         
     }
+
+    
 }
