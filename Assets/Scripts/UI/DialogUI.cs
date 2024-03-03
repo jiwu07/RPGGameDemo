@@ -13,6 +13,8 @@ public class DialogUI : MonoBehaviour
     public TextMeshProUGUI nameText;
     public Button nextButton;
 
+    public GameObject UI;
+
     private List<string> contentList; // dialog content
     private int contentIndex = 0;
 
@@ -36,7 +38,7 @@ public class DialogUI : MonoBehaviour
 
     public void Show()
     {
-        gameObject.SetActive(true);
+        UI.SetActive(true);
     }
 
     public void Show(string name, string[] content)
@@ -45,14 +47,14 @@ public class DialogUI : MonoBehaviour
         contentList = new List<string>();
         contentList.AddRange(content);
         contentText.text = contentList[0]; //show the first sentence
-        gameObject.SetActive(true);
+        UI.SetActive(true);
 
     }
 
     public void Hide()
     {
         contentIndex = 0;
-        gameObject.SetActive(false);
+        UI.SetActive(false);
     }
 
     private void OnButtonClick()
