@@ -124,7 +124,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e795072b0926c4e55987adb7867e816c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackValue: 0
+  attackValue: 30

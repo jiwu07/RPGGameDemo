@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JavelinWeapon : Weapon
 {
-    public GameObject bulletPreb;
+    public GameObject bulletPreFab;
     public float bulletSpeed = 20.0f;
     private GameObject bullet;
 
@@ -12,6 +12,7 @@ public class JavelinWeapon : Weapon
     private void Start()
     {
         SpawnBullet();
+        attackValue = 20;
     }
    
     
@@ -34,7 +35,7 @@ public class JavelinWeapon : Weapon
 
     private void SpawnBullet()
     {
-        bullet = GameObject.Instantiate(bulletPreb, transform.position, transform.rotation);
+        bullet = GameObject.Instantiate(bulletPreFab, transform.position, transform.rotation);
         bullet.transform.parent = transform;
         bullet.GetComponent<Collider>().enabled = false;
         

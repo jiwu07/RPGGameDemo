@@ -9,9 +9,10 @@ public class scytheWeapon : Weapon
 
     private Animator anim;
 
-    private void Start()
+     void Start()
     {
         anim = GetComponent<Animator>();
+        attackValue = 50;
     }
 
 
@@ -25,7 +26,7 @@ public class scytheWeapon : Weapon
         
         if(other.tag == Tag.ENERMY)
         {
-            print(other.name);
+            other.gameObject.GetComponent<Enemy>().HPdecrease(attackValue);
         }
 
     }

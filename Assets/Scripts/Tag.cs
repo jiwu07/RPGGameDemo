@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tag 
 {
-    public const string ENERMY = "Enermy";
+    public const string ENERMY = "Enemy";
     public const string PLAYER = "Player";
     public const string NPC = "NPC";
     public const string WEAPON = "Weapon";

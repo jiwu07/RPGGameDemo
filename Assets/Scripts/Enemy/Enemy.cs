@@ -59,11 +59,7 @@ public class Enemy : MonoBehaviour
         }
 
 
-        //test
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            HPdecrease(80);
-        }
+       
     }
 
     Vector3 FindRandomPosition(float movingLength)

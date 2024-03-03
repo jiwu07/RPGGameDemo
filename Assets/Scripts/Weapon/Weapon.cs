@@ -8,6 +8,6 @@ public class Weapon : MonoBehaviour
 
     public virtual void attack()
     {
-        print("attack");
+       // print("attack");
     }
 }

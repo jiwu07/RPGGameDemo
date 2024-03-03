@@ -67,13 +67,13 @@
     <Compile Include="Assets/Scripts/Player/followTarget.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets/Scripts/Enemy.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
     <Compile Include="Assets/Scripts/interactable/interactableObject.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
     <Compile Include="Assets/Scripts/Manager/InventoryManager.cs" />
+    <Compile Include="Assets/Scripts/Enemy/EnemySpawner.cs" />
     <Compile Include="Assets/Scripts/Weapon/scytheWeapon.cs" />
     <Compile Include="Assets/Scripts/SO/ItemSO.cs" />
     <Compile Include="Assets/Scripts/interactable/NPCObject.cs" />
@@ -93,6 +93,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets/Scripts/Enemy/Enemy.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerAttack.cs" />
