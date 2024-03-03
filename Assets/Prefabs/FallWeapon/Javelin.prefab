@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6935121173698815916}
   - component: {fileID: 6294898533188966446}
   - component: {fileID: -8962245072297109924}
+  - component: {fileID: 3281898366839835161}
   m_Layer: 0
   m_Name: Javelin
   m_TagString: Interactable
@@ -173,3 +174,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSO: {fileID: 11400000, guid: ffcfc60d8d1ad4a0590f665bb690072b, type: 2}
+--- !u!114 &3281898366839835161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760437793271024779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f79e0e8125ed423badea51673810947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

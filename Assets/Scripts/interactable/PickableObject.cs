@@ -10,7 +10,7 @@ public class PickableObject : interactableObject
     protected override void interact()
     {
         //pick the Object from ground then remove the Object from Map
-        //InventoryManager.Instance.AddItem(itemSO);
-        //Destroy(this);
+        InventoryManager.Instance.AddItem(itemSO);
+        Destroy(this.gameObject);
     }
 }

@@ -35,5 +35,6 @@ public enum ItemPropertyType
     Energy,
     Mental,
     Speed,
-    Attack
+    Attack,
+    Experience
 }
