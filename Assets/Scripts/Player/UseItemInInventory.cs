@@ -5,8 +5,10 @@ using UnityEngine;
 public class UseItemInInventory : MonoBehaviour
 {
     public static UseItemInInventory Instance;
+    private PlayerAttack playerAttack;
     void Start()
     {
+        playerAttack = GetComponent<PlayerAttack>();
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -16,11 +18,22 @@ public class UseItemInInventory : MonoBehaviour
 
     public void UseItem(ItemSO itemSO, ItemUI itemUI)
     {
-        //load weapon
-
-        //use consumable item
-
-
+        switch (itemSO.type)
+        {
+            case ItemType.Weapon:
+                //load weapon
+                playerAttack.LoadWeapon(itemSO);
+                break;
+            case ItemType.Consumable:
+                //use consumable item
+                break;
+            case ItemType.TaskObject:
+                //todo:
+                break;
+            default:
+                break;
+        }
+        
 
         //remove itemUI from inventoryManager
         InventoryManager.Instance.RemoveItem(itemSO,itemUI);

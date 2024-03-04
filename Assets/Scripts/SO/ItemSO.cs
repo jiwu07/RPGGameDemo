@@ -13,6 +13,7 @@ public class ItemSO : ScriptableObject
     public List<ItemProperty> propertyList;
     public Sprite icon;
     public GameObject prefab;
+    public string positionName;
 }
 
 public enum ItemType

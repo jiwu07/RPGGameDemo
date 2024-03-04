@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{0BE8E511-D506-A1D0-E67D-923A5ED26D39}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/UseItemInInventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerAttack.cs">
     <Files>
       <File FileName="Assets/Scripts/UI/InventoryUI.cs" Line="75" Column="6" />
       <File FileName="Assets/Scripts/UI/ItemUI.cs" Line="10" Column="1" />
       <File FileName="Assets/Scripts/UI/DetailUI.cs" Line="45" Column="30" />
-      <File FileName="Assets/Scripts/Player/UseItemInInventory.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/Player/UseItemInInventory.cs" Line="25" Column="47" />
+      <File FileName="Assets/Scripts/Player/PlayerAttack.cs" Line="31" Column="23" />
+      <File FileName="Assets/Scripts/Manager/InventoryManager.cs" Line="23" Column="27" />
+      <File FileName="Assets/Scripts/SO/ItemSO.cs" Line="11" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +19,7 @@
                 <Node name="interactable" expanded="True" />
                 <Node name="Manager" expanded="True" />
                 <Node name="Player" expanded="True">
-                  <Node name="UseItemInInventory.cs" selected="True" />
+                  <Node name="PlayerAttack.cs" selected="True" />
                 </Node>
                 <Node name="SO" expanded="True" />
                 <Node name="UI" expanded="True" />
