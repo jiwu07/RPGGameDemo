@@ -26,19 +26,29 @@ public class PlayerAttack : MonoBehaviour
         if (hasWeapon)
         {
             //if already has wepon the unload the old and put the new
-            UnLoadWeapon();
-            //put the old weapon back to inventory
-            InventoryManager.Instance.AddItem(this.itemSO);
-            Destroy(this.weapon);
+            UnLoadWeapon();     
         }
+        //put the current ItemSO
         this.itemSO = itemSO;
+        //create the weapon
         weapon = Instantiate(itemSO.prefab);
         string weaponName =itemSO.positionName;
+        //put the weapon under the correct position
         weapon.transform.parent = this.transform.Find("WeaponList/" + weaponName);
+
+        weapon.transform.localPosition = Vector3.zero;
+        weapon.transform.localRotation = Quaternion.identity;
+
+        hasWeapon = true;
+
     }
 
     public void UnLoadWeapon()
     {
+        //put the old weapon back to inventory
+        InventoryManager.Instance.AddItem(this.itemSO);
+        Destroy(this.weapon);
+
         this.weapon = null;
     }
 }

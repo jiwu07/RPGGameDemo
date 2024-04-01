@@ -107,6 +107,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -369,6 +370,7 @@
 "Assets/Scripts/Player/PickObject.cs"
 "Assets/Scripts/Player/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerMove.cs"
+"Assets/Scripts/Player/PlayerProperty.cs"
 "Assets/Scripts/Player/UseItemInInventory.cs"
 "Assets/Scripts/SO/ItemDBSO.cs"
 "Assets/Scripts/SO/ItemSO.cs"

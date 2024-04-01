@@ -8,6 +8,14 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance { get; private set; }
     public List<ItemSO> itemList;
 
+    public ItemSO defaultWeapon;
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(1);
+        AddItem(defaultWeapon);
+    }
+
     public void Awake()
     {
         if (Instance != null && Instance != this)

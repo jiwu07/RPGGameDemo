@@ -10,7 +10,7 @@ public class ItemSO : ScriptableObject
     public string name;
     public ItemType type;
     public string description;
-    public List<ItemProperty> propertyList;
+    public List<Property> propertyList;
     public Sprite icon;
     public GameObject prefab;
     public string positionName;
@@ -24,13 +24,13 @@ public enum ItemType
 }
 
 [Serializable]
-public class ItemProperty
+public class Property
 {
-    public ItemPropertyType propertyType;
+    public PropertyType propertyType;
     public int Value;
 }
 
-public enum ItemPropertyType
+public enum PropertyType
 {
     HP,
     Energy,

@@ -74,28 +74,28 @@ public class DetailUI : MonoBehaviour
         DescriptionText.text = itemSO.description;
 
         //inite features
-        foreach (ItemProperty property in itemSO.propertyList)
+        foreach (Property property in itemSO.propertyList)
         {
             string ProText = "";
 
             switch (property.propertyType)
             {
-                case ItemPropertyType.HP:
+                case PropertyType.HP:
                     ProText = "HP: ";
                     break;
-                case ItemPropertyType.Attack:
+                case PropertyType.Attack:
                     ProText = "Attack: ";
                     break;
-                case ItemPropertyType.Energy:
+                case PropertyType.Energy:
                     ProText = "Energy: ";
                     break;
-                case ItemPropertyType.Mental:
+                case PropertyType.Mental:
                     ProText = "Mental: ";
                     break;
-                case ItemPropertyType.Speed:
+                case PropertyType.Speed:
                     ProText = "Speed: ";
                     break;
-                case ItemPropertyType.Experience:
+                case PropertyType.Experience:
                     ProText = "Experience: ";
                     break;
                 default:
