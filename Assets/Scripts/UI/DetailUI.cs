@@ -102,9 +102,9 @@ public class DetailUI : MonoBehaviour
                     break;
             }
 
-            ProText += property.Value;
+            ProText += property.value;
             GameObject GO = GameObject.Instantiate(featuresPreFab);
-            GO.transform.parent = featuresContent.transform;
+            GO.transform.SetParent(featuresContent.transform);
             GO.transform.Find("Feature").GetComponent<TextMeshProUGUI>().text = ProText;
 
         }

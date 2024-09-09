@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Javelin 1
   m_EditorClassIdentifier: 
   id: 200
-  name: SSJavelin
+  itemName: javalin bullet
   type: 0
   description: ' I don''t know what to say, you should take it.'
   propertyList:
   - propertyType: 4
-    Value: 25
+    value: 15
   icon: {fileID: 21300000, guid: f2275f981710b4ff18a8f9d77333903b, type: 3}
   prefab: {fileID: 4760437793271024779, guid: 3c0f60ec7ef974eaab841694c9c1a162, type: 3}
+  positionName: 

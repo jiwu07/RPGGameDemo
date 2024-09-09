@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class UseItemInInventory : MonoBehaviour
 {
-    public static UseItemInInventory Instance;
+    public static UseItemInInventory Instance { get; private set; }
     private PlayerAttack playerAttack;
+    private PlayerProperty playerProperty;
+
     void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
+        playerProperty = GetComponent<PlayerProperty>();
+
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -23,9 +27,14 @@ public class UseItemInInventory : MonoBehaviour
             case ItemType.Weapon:
                 //load weapon
                 playerAttack.LoadWeapon(itemSO);
+                PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
+
                 break;
             case ItemType.Consumable:
                 //use consumable item
+                playerProperty.UseDrug(itemSO);
+                PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
+
                 break;
             case ItemType.TaskObject:
                 //todo:

@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
 
     private NavMeshAgent enemyAgent;
     public int HP = 80;
+    public int exp =20;
     public const string ANIM_PARM_ISFALL = "isFall";
 
     // Start is called before the first frame update
@@ -68,35 +69,40 @@ public class Enemy : MonoBehaviour
         return transform.position + RandomDir * movingLength;
     }
 
+    public void EnemyDieFallingItem()
+    {
+        //falling item depengding on the type of the enemy
+        int weaponCount = Random.Range(0, 3);
+        for (int i = 0; i < weaponCount; i++)
+        {
+            Vector3 ranP = FindRandomPosition(Random.Range(0, 1));
+            (ItemSO, ItemSO) item = ItemManager.Instance.GetRandomWeapon();
+            GameObject GO = GameObject.Instantiate(item.Item1.prefab, ranP, item.Item1.prefab.transform.rotation);
+            GO.GetComponent<PickableObject>().itemSO = item.Item2;
+        }
 
+        int conCount = Random.Range(0, 2);
+        for (int i = 0; i < conCount; i++)
+        {
+            Vector3 ranP = FindRandomPosition(Random.Range(0, 1));
+            ItemSO item = ItemManager.Instance.GetRandomConsumable();
+            GameObject GO = Instantiate(item.prefab, ranP, item.prefab.transform.rotation);
+            GO.GetComponent<PickableObject>().itemSO = item;
+        }
+
+        
+        
+    }
     public void HPdecrease(int damage)
     {
         HP -= damage;
         if(HP <= 0)
         {
-
-            //falling item depengding on the type of the enemy
-            int weaponCount = Random.Range(0, 3);
-            for(int i = 0; i < weaponCount; i++)
-            {
-                Vector3 ranP = FindRandomPosition(Random.Range(0, 1));
-                (ItemSO,ItemSO) item = ItemManager.Instance.GetRandomWeapon();                
-                GameObject GO = GameObject.Instantiate(item.Item1.prefab ,  ranP, item.Item1.prefab.transform.rotation);
-                GO.GetComponent<PickableObject>().itemSO = item.Item2;
-            }
-
-            int conCount = Random.Range(0, 3);
-            for (int i = 0; i < conCount; i++)
-            {
-                Vector3 ranP = FindRandomPosition(Random.Range(0, 1));
-                ItemSO item = ItemManager.Instance.GetRandomConsumable();
-                GameObject GO = GameObject.Instantiate(item.prefab,  ranP, item.prefab.transform.rotation);
-                GO.GetComponent<PickableObject>().itemSO = item;
-            }
-
-            Destroy(this.gameObject);
+            EventCenter.EnemyDied(this);
+            EnemyDieFallingItem();
+            Destroy(gameObject);
         }
-            
-        
+
+
     }
 }

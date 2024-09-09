@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: 
   id: 100
-  name: MMushroom
+  itemName: mushroom
   type: 1
   description: mental upup
   propertyList:
   - propertyType: 2
-    Value: 15
+    value: 20
   icon: {fileID: 21300000, guid: b8f88c5b0360e4b21ba62dd24b65ecad, type: 3}
   prefab: {fileID: 5315568976968959275, guid: d084260af31414436bc39555f227f2bf, type: 3}
+  positionName: 

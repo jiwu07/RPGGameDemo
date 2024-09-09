@@ -7,7 +7,7 @@ using UnityEngine;
 public class ItemSO : ScriptableObject
 {
     public int id;
-    public string name;
+    public string itemName;
     public ItemType type;
     public string description;
     public List<Property> propertyList;
@@ -27,7 +27,17 @@ public enum ItemType
 public class Property
 {
     public PropertyType propertyType;
-    public int Value;
+    public int value;
+
+    public Property()
+    {
+
+    }
+    public Property(PropertyType type, int value)
+    {
+        propertyType = type;
+        this.value = value;
+    }
 }
 
 public enum PropertyType

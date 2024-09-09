@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Scythe 1
   m_EditorClassIdentifier: 
   id: 201
-  name: SSScythe
+  itemName: scythe1
   type: 0
   description: Very powerful weapon, you should take it.
   propertyList:
   - propertyType: 4
-    Value: 20
+    value: 25
   icon: {fileID: 21300000, guid: e40604c3cd36b4ac58e510ae01f05f98, type: 3}
   prefab: {fileID: 9110510781910277405, guid: c908390edf6ae424ebe3856532667db6, type: 3}
+  positionName: 
