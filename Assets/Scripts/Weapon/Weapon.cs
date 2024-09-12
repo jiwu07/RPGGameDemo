@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public int attackValue;
+    //public List<Property> weaponProperty;
     public Sprite weaponIcon;
 
     public virtual void attack()
     {
        // print("attack");
     }
+
+    
+
 }

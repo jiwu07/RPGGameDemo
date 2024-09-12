@@ -12,7 +12,7 @@ public class JavelinBullet : MonoBehaviour
     {
         rgd = GetComponent<Rigidbody>();
         cld = GetComponent<Collider>();
-        damage = gameObject.transform.parent.gameObject.GetComponent<JavelinWeapon>().attackValue;
+        damage = PlayerProperty.Instance.GetAttackValue();
         
     }
 

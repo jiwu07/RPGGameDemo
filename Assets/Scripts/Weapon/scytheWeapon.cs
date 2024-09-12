@@ -12,24 +12,28 @@ public class scytheWeapon : Weapon
      void Start()
     {
         anim = GetComponent<Animator>();
-        attackValue = 50;
-    }
+        //weaponProperty.Add(new Property(PropertyType.Attack, 50 ));
+        //weaponProperty.Add(new Property(PropertyType.Speed, -5));
+        //weaponProperty.Add(new Property(PropertyType.HP, 55));
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag == Tag.ENERMY)
+        {
+            int attack = PlayerProperty.Instance.GetAttackValue();
+            other.gameObject.GetComponent<Enemy>().HPdecrease(attack);
+        }
+
+    }
 
     public override void attack()
     {
         anim.SetTrigger(ANIM_PARM_ISATTACK);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if(other.tag == Tag.ENERMY)
-        {
-            other.gameObject.GetComponent<Enemy>().HPdecrease(attackValue);
-        }
-
-    }
+    
 
   
 }

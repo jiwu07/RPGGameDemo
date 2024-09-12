@@ -83,6 +83,9 @@ public class DetailUI : MonoBehaviour
                 case PropertyType.HP:
                     ProText = "HP: ";
                     break;
+                case PropertyType.HPMax:
+                    ProText = "HPMax: ";
+                    break;
                 case PropertyType.Attack:
                     ProText = "Attack: ";
                     break;

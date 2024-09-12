@@ -44,18 +44,27 @@ public class PlayerAttack : MonoBehaviour
         weapon.transform.localRotation = Quaternion.identity;
         weapon.transform.GetComponent<Weapon>().weaponIcon = itemSO.icon;
         hasWeapon = true;
-       // weaponIcon = itemSO.icon;
-        PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
-
+        // weaponIcon = itemSO.icon;
+        //add property
+        List<Property> list = itemSO.propertyList;
+        PlayerProperty.Instance.AddPropertyList(list);
 
     }
 
     public void UnLoadWeapon()
     {
+        if(this.itemSO == null)
+        {
+            return;
+        }
+        // remove property
+        List<Property> list = itemSO.propertyList;
+        PlayerProperty.Instance.RemovePropertyList(list);
         //put the old weapon back to inventory
         InventoryManager.Instance.AddItem(this.itemSO);
         Destroy(this.weapon);
 
         this.weapon = null;
+        PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
     }
 }

@@ -43,6 +43,7 @@ public class Property
 public enum PropertyType
 {
     HP,
+    HPMax,
     Energy,
     Mental,
     Speed,

@@ -76,8 +76,8 @@ public class PlayerPropertyUI : MonoBehaviour
 
         }
 
-        hpText.text = pp.hPValue.ToString() + "/" + pp.hPValueMax.ToString();
-        hpImage.fillAmount = pp.hPValue / 100.0f;
+        hpText.text = pp.hPValue.ToString() + "/" + pp.GetHPMaxValue().ToString();
+        hpImage.fillAmount = pp.hPValue / pp.GetHPMaxValue();
 
         levelText.text = pp.level.ToString();
         expImage.fillAmount = pp.currentExp / (pp.level * 30.0f);
@@ -87,35 +87,8 @@ public class PlayerPropertyUI : MonoBehaviour
 
         AddToPropertyList(PropertyType.Energy.ToString() + ": " + pp.energyVaule);
         AddToPropertyList(PropertyType.Mental.ToString() + ": " + pp.mentalValue);
-
-        foreach (var item in pp.propertyDict)
-        {
-            string ProText = "";
-
-            switch (item.Key)
-            {
-                case PropertyType.Attack:
-                    ProText = "Attack: ";
-                    break;
-
-                case PropertyType.Speed:
-                    ProText = "Speed: ";
-                    break;
-                default:
-                    break;
-            }
-
-            int sum = 0;
-
-            foreach (var item1 in item.Value)
-            {
-                sum += item1.value;
-            }
-
-            AddToPropertyList(ProText + sum);
-
-
-        }
+        AddToPropertyList(PropertyType.Attack .ToString() + ": " + pp.GetAttackValue());
+        AddToPropertyList(PropertyType.Speed.ToString() + ": " + pp.GetSpeedValue());
 
 
     }

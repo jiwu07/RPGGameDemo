@@ -12,10 +12,12 @@ public class JavelinWeapon : Weapon
     private void Start()
     {
         SpawnBullet();
-        attackValue = 20;
+        //weaponProperty.Add(new Property(PropertyType.Attack, 10));
+        //weaponProperty.Add(new Property(PropertyType.Speed, 5));
+        //weaponProperty.Add(new Property(PropertyType.HP, 20));
     }
-   
-    
+
+
     public override void attack()
     {
         if(bullet != null)
