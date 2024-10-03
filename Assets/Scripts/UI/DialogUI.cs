@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,6 +18,8 @@ public class DialogUI : MonoBehaviour
 
     private List<string> contentList; // dialog content
     private int contentIndex = 0;
+
+    private Action OnDialogEnd;
 
     private void Awake()
     {
@@ -41,13 +44,14 @@ public class DialogUI : MonoBehaviour
         UI.SetActive(true);
     }
 
-    public void Show(string name, string[] content)
+    public void Show(string name, string[] content, Action OnDialogEnd = null)
     {
         nameText.text = name;
         contentList = new List<string>();
         contentList.AddRange(content);
         contentText.text = contentList[0]; //show the first sentence
         UI.SetActive(true);
+        this.OnDialogEnd = OnDialogEnd;
 
     }
 
@@ -62,6 +66,7 @@ public class DialogUI : MonoBehaviour
         contentIndex++;
         if(contentIndex >= contentList.Count)
         {
+            OnDialogEnd?.Invoke();
             Hide();
             return;
         }

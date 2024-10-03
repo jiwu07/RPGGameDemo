@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8377de86892bc4956be9d30a0041f087, type: 3}
+  m_Name: SecondTask
+  m_EditorClassIdentifier: 
+  taskStatus: 3
+  dialogStart:
+  - Somebody help
+  - We need some woods to build our house!
+  - Maybe also kill some monsters?
+  dialogProcessing:
+  - If you can bring me 10 wood and kiil some monsters. That will be very kind!
+  dialogComplete:
+  - AHHHHHHH, THANK YOUUUU!
+  dialogEnd:
+  - You are so Kind!
+  taskDescription: kill some monsters and bring some woods.
+  TaskEnemyNeed: 2
+  currentEnemyCount: 5
+  TaskObjectNeed: 10
+  currentObjectCount: 12
+  taskItemType: 2
+  startReward: []
+  endReward:
+  - {fileID: 11400000, guid: 0997efcc36f754bd1b78384a65db6c4c, type: 2}
+  taskUI: {fileID: 0}

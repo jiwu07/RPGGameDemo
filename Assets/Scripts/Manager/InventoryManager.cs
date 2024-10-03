@@ -10,11 +10,12 @@ public class InventoryManager : MonoBehaviour
 
     public ItemSO defaultWeapon;
 
-    IEnumerator Start()
-    {
-        yield return new WaitForSeconds(1);
-        AddItem(defaultWeapon);
-    }
+    //DEFAULT WEAPEN
+    //IEnumerator Start()
+    //{
+    //    yield return new WaitForSeconds(1);
+    //    AddItem(defaultWeapon);
+    //}
 
     public void Awake()
     {
@@ -28,8 +29,22 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(ItemSO item)
     {
+        //hier need to optimize, when unload weapon putback
+        //to inventory,shouldn't show anything
+
+
+        if (item.type != ItemType.Weapon && item.type != ItemType.Consumable)
+        {
+            Debug.Log("taskobject get" + item.type);
+            EventCenter.TaskObjectGet(item);
+
+            return;
+        }
+
         itemList.Add(item);
         InventoryUI.Instance.AddItem(item);
+
+        MessageUI.Instance.Show("You get an new item " + item.itemName);
     }
 
     public void RemoveItem(ItemSO item, ItemUI itemUI)

@@ -53,7 +53,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void UnLoadWeapon()
     {
-        if(this.itemSO == null)
+        if(this.itemSO == null || weapon == null)
         {
             return;
         }

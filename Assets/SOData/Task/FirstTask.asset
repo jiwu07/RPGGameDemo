@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8377de86892bc4956be9d30a0041f087, type: 3}
+  m_Name: FirstTask
+  m_EditorClassIdentifier: 
+  taskStatus: 3
+  dialogStart:
+  - 'Hi, '
+  - There are so many monsters around the village.
+  - Can you help us to kill some monsters?
+  - Here is a weapon, maybe you need it.
+  dialogProcessing:
+  - I am waiting for your good news
+  dialogComplete:
+  - Impresive!
+  - You really killed so many monsters!
+  - Thank you so much and there are some gifts for you.
+  dialogEnd:
+  - Bless you!
+  taskDescription: 'Kill monster to keep the village safe. '
+  TaskEnemyNeed: 10
+  currentEnemyCount: 5
+  TaskObjectNeed: 0
+  currentObjectCount: 0
+  taskItemType: 0
+  startReward:
+  - {fileID: 11400000, guid: 35d6516f2d2ac42d79fca2944932fa72, type: 2}
+  endReward:
+  - {fileID: 11400000, guid: bed61fb0ba37840be93382532eb5997e, type: 2}
+  - {fileID: 11400000, guid: 93f0998ac312b444d8ebcda6af6fa55d, type: 2}
+  taskUI: {fileID: 0}

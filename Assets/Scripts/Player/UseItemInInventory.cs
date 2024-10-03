@@ -36,9 +36,7 @@ public class UseItemInInventory : MonoBehaviour
                 PlayerPropertyUI.Instance.UpdatePlayerPropertyUI();
 
                 break;
-            case ItemType.TaskObject:
-                //todo:
-                break;
+            
             default:
                 break;
         }

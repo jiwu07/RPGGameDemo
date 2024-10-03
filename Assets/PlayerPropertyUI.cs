@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 using TMPro;
-
-using UnityEditor.Search;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +22,7 @@ public class PlayerPropertyUI : MonoBehaviour
     private Image weaponIcon;
     private PlayerProperty pp;
     private PlayerAttack pa;
+
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +72,10 @@ public class PlayerPropertyUI : MonoBehaviour
             //weaponIcon.sprite = pa.weaponIcon;
             weaponIcon.sprite = pa.weapon.GetComponent<Weapon>().weaponIcon;
 
+        }
+        else
+        {
+            weaponIcon.sprite = null;
         }
 
         hpText.text = pp.hPValue.ToString() + "/" + pp.GetHPMaxValue().ToString();

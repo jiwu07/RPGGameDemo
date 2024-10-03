@@ -20,7 +20,8 @@ public enum ItemType
 {
     Weapon,
     Consumable,
-    TaskObject
+    TaskObject1,
+    TaskObject2
 }
 
 [Serializable]

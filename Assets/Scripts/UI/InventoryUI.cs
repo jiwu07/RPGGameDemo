@@ -1,8 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-
-using Unity.VisualScripting.ReorderableList;
-
 using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
@@ -64,7 +61,7 @@ public class InventoryUI : MonoBehaviour
     {
         GameObject item = Instantiate(itemPreFab);
         item.transform.parent = content.transform;
-
+        
         item.GetComponent<ItemUI>().IniteItemUI(itemSO);
 
     }

@@ -17,6 +17,7 @@ public class DetailUI : MonoBehaviour
 
     private ItemSO itemSO;
     private ItemUI itemUI;
+    public GameObject useButton;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class DetailUI : MonoBehaviour
         }
         Instance = this;
         Hide();
+        useButton = transform.Find("Detail/UseButton").gameObject;
+
     }
 
 
@@ -56,7 +59,7 @@ public class DetailUI : MonoBehaviour
         //create new Details 
         string type = "";
         this.icon.sprite = itemSO.icon;
-
+        useButton.SetActive(true);
         switch (itemSO.type)
         {
             case ItemType.Weapon:
@@ -65,9 +68,11 @@ public class DetailUI : MonoBehaviour
             case ItemType.Consumable:
                 type = "Consumable";
                 break;
-            case ItemType.TaskObject:
-                type = "TaskObject";
+            default:
+                useButton.SetActive(false);
                 break;
+
+                
         }
         typeText.text = type;
         nameText.text = itemSO.name;
