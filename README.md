@@ -15,7 +15,7 @@ Download the game here.
 
 Extract the downloaded zip file (if it's compressed).
 
-Open the extracted folder and double-click the .exe file to run the game.
+Open the extracted folder and double-click the RPGGameDemo.app file to run the game.
 
 ## Open the project in Unity
 Download and install Unity Hub and Unity version 2022.3.12f1 or newer.
